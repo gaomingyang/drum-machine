@@ -18,15 +18,15 @@ function App() {
   const [audioName,setAudioName] = useState("")
 
   const buttons = [
-    { btn: "Q", name: "Heater 1", audio: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" },
-    { btn: "W", name: "Heater 2", audio: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" },
-    { btn: "E", name: "Heater 3", audio: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" },
-    { btn: "A", name: "Heater 4", audio: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" },
-    { btn: "S", name: "Clap", audio: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" },
-    { btn: "D", name: "Open HH", audio: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" },
-    { btn: "Z", name: "Kick n' Hat", audio: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" },
-    { btn: "X", name: "Kick", audio: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" },
-    { btn: "C", name: "Closed HH", audio: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" },
+    { btn: "Q", name: "Heater 1", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Heater-1.mp3" },
+    { btn: "W", name: "Heater 2", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Heater-2.mp3" },
+    { btn: "E", name: "Heater 3", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Heater-3.mp3" },
+    { btn: "A", name: "Heater 4", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Heater-4_1.mp3" },
+    { btn: "S", name: "Clap", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Heater-6.mp3" },
+    { btn: "D", name: "Open HH", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Dsc_Oh.mp3" },
+    { btn: "Z", name: "Kick n' Hat", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Kick_n_Hat.mp3" },
+    { btn: "X", name: "Kick", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/RP4_KICK_1.mp3" },
+    { btn: "C", name: "Closed HH", audio: "https://github.com/gaomingyang/drum-machine/raw/main/public/audios/Cev_H2.mp3" },
   ];
 
   function displayButtonName(name) {
