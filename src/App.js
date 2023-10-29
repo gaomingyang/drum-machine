@@ -1,4 +1,4 @@
-import { useState,useRef, useEffect } from 'react';
+import { useState } from 'react';
 import './App.scss';
 
 import ButtonList from "./components/ButtonList";
@@ -29,62 +29,14 @@ function App() {
     { btn: "C", name: "Closed HH", audio: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" },
   ];
 
-  // const audioRefs = {}
-  // buttons.forEach((button)=>{
-  //   audioRefs[button.btn]= useRef(null)
-  // })
-
-  // const btntable = buttons.map((b)=>{
-  //   <Btn ></Btn>
-  // })
-
-  useEffect(() => {
-    console.log("init effect")
-
-    //监听按键
-    const handleKeyPress = (e) => {
-      const keyPressed = e.key.toUpperCase();
-      console.log("按下了：", keyPressed)
-      // if (audioRefs[keyPressed]) {
-      //   audioRefs[keyPressed].current.play();
-      // }
-    }
-
-    window.addEventListener('keydown', handleKeyPress);
-
-    //避免一直
-    // return () => {
-    // window.removeEventListener('keydown', handleKeyPress);
-    // };
-
-  }, [])
-
   function displayButtonName(name) {
-    console.log("displayButtonName")
-    console.log("in app",name)
     setAudioName(name)
   }
-
-
-  // function clickButton(event) {
-  //   console.log("mouse click button")
-  //   console.log(event)
-  //   const clickedDiv = event.currentTarget;
-
-  // let btn = event.target.innerText
-  // console.log(btn)
-
-  // //播放音乐
-  // const audioElement = clickedDiv.querySelector('audio');
-  // // 播放音频
-  // if (audioElement) {
-  //   audioElement.play();
-  // }
-  // }
 
   return (
     <div className="App">
       <h1>Drum Machine</h1>
+
       <div id="drum-machine">
         <div id="buttons">
           <ButtonList buttons={buttons} displayButtonName={displayButtonName}/>
