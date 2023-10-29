@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine{
+ display: flex;
+ justify-content: space-around;
+  width: 500px;
+  height: 200px;
+  border: 1px solid #ccc;
+
+  #display{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .drum-pad{
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 40px;
+      margin:4px
+    }
+  }
+  
+}
